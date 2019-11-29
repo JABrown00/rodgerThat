@@ -1,0 +1,169 @@
+html, body, header, footer, aside, div, p, h1, h2, h3, li, ul
+{
+   margin: 0;
+   padding: 0;
+   font-family { font-family: Verdana, Geneva, sans-serif; }
+   font-size: 0.8em;
+}
+
+body#body{
+  background-color: tan;
+}
+
+div#panel {
+  background-color: darkgreen;
+}
+li#panel{
+  background-color: tan;
+}
+div.panel-heading#panel{
+  background-color: tan;
+  border: solid 2pt darkgreen;
+
+}
+
+h1 { font-size: 1.5em; margin: 0.25em;}
+h2 { font-size: 1.25em; margin: 0.25em;}
+h3 { font-size: 1em; margin: 0.25em;}
+p { margin: 0.25em 0; }
+a:link, a:visited { color: #090388; }
+
+li { list-style-type: none; margin: 0.25em 0; }
+
+header {
+   color: white;
+   background-color: darkgreen;
+   height: 4em;
+   padding-top: 1.25em;
+   padding-bottom: 6em;
+   position: relative;
+}
+
+
+div.container#main_container{
+  border: solid 2pt darkgreen;
+  padding-bottom: 2.5em;
+}
+
+
+img#mainImage1{
+  height: 150px;
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  filter: blur(0.35em);
+}
+
+h1#pictureCaption{
+  margin-left: 1em;
+}
+
+img#orderOnlineImage, img#rewardsImage{
+  height: 150px;
+}
+
+img#locationImage{
+  height :140px;
+}
+
+
+picture#mainImage2 img{
+  height: 400px;
+  width: 50%;
+  filter: blur(0.25em);
+  position: relative;
+  z-index: -1;
+  margin-left: 3%;
+  margin-top: 15px;
+}
+
+header>ul{
+  background-color: grey;
+  border: solid 5pt green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; 
+
+}
+
+
+
+nav {
+  color: white;
+  background-color: #A9A9A9;
+  padding: 0.5em;  
+  float: left;
+}
+
+div#options {
+    padding: 0.5em;
+    padding-bottom: 15%;
+    margin-left: 150px;
+    margin-right: 160px;
+    column-count: 3;
+    column-rule: solid 1px green;
+    column-gap: 30px;
+    height: 200px;
+
+}
+
+div#options img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+div.col-md-9#column,div.col-md-3#column{
+  padding-right: 0;
+}
+
+
+ a:hover{
+  color: yellow;
+
+}
+
+
+hr{
+  background-color: green;
+  height: 25px;
+  margin-bottom: 20px;
+  border: green;
+}
+
+
+aside {
+  margin-top: 5em;
+  color: white;
+  background-color: green;
+  padding: 0.5em;  
+  float: right;
+  width: 150px;
+  position: sticky;
+  right: 0;
+}
+
+footer#footer {
+  color: white;
+  background-color: darkgreen;
+  height: 3em;
+  padding: 0.75em;
+  height: 8em;
+  width: 100%;
+}
+
+footer button {
+  border: solid 2pt green;
+  padding: 0.25em;
+}
+
+button#locationButton{
+  border: solid 2pt green;
+  margin-left: 2.25em;
+}
+
+.box { 
+   border: 1pt solid black;
+   margin: 3px 3px 10px 3px;
+   padding: 5px;
+}   

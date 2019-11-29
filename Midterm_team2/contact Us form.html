@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Contact Us</title>
+   <link rel="stylesheet" href="contact Us form.css" />
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>    
+    <script type="text/javascript" language="javascript" src="contact Us form.js"></script>      
+   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+</head>
+
+<body id="body">
+<header>
+   <h1>World Wide Cafe</h1>
+    <ul id = "container">
+      <a href="index.html"><li>Home</li></a>
+      <a href="Contact Us.html"><li>Contact Us</li></a>
+      <a href="catering.html"><li>Catering</li></a>
+      <a href="location.html"><li>Locations</li></a>
+      <a href="franchise.html"><li>Franchise</li></a>
+      <a href="about.html"><li>About</li></a>
+    </ul>
+</header>
+
+
+<br>
+<div class="row">
+<div class= "col-md-1"></div><!--Indetation row-->
+<div class="col-md-11"> <!--Main section column--> 
+  <div id="main"><br>
+    <form method="post" action="process.php">
+      <fieldset>
+        <legend><h1>Share Your Concerns</h1></legend>
+        <p>
+          <label name = "Test" >Choose your location:</label>
+          <select name="location" >
+            <!--optgroup label="Choose a country"-->
+            <option value="" disabled selected hidden>Choose a location</option>
+            <optgroup label= "Asia" >
+              <option>India</option>
+              <option>Pakistan</option>
+              <option>Hong Kong</option>
+            </optgroup>
+
+            <optgroup label="Africa">
+              <option>Egypt</option>
+              <option>South Africa</option>
+              <option>Angola</option>
+            </optgroup>
+
+            <optgroup label="South America">
+              <option>Brazil</option>
+              <option>Peru</option>
+              <option>Argentina</option>
+            </optgroup>
+
+            <optgroup label="Europe">
+              <option>United Kingdom</option>
+              <option>Greece</option>
+              <option>Netherlands</option>
+            </optgroup>
+
+            <optgroup label="North America">
+              <option>Georgia</option>
+              <option>Arizona</option>
+              <option>Pennsylvania</option>
+            </optgroup>
+
+            <optgroup label="Australia">
+              <option>Australia</option>
+              <option>Sydney</option>
+              <option>New South Wales</option>
+            </optgroup>
+            <!--/optgroup-->
+          </select>
+
+        </p>
+
+        <p>
+          <label>Write your message here:</label><br>
+          <textarea name="message" rows="10" cols="70" placeholder="Message"></textarea>
+        </p>
+
+        <div class="contactContainer"> <!--Contact Info Container-->
+          <h1>Contact Info</h1>
+        <p>
+          <label>Name:</label><br>
+          <input type="text" name="name">
+        </p>
+        <p>
+          <label>Email:</label><br>
+          <input type="email" name="email">
+        </p>
+
+        <p>
+          <label>Phone Number:</label><br>
+          <input type="tel" name="phone">
+        </p>
+      </div><!--End of contact info container-->
+
+        <p>
+          <label for="happy" class="pull-left" >Awful :(</label>
+          <label for="sad" class="pull-right" >Fantastic :)</label>
+          <input type="range" min="0" max="10" step="1" name="rating" />
+          <output for="rateNum" onforminput="valye = rateNum.valueAsNumber" ></output>
+        </p>
+        <input type="submit" name="submit">
+        <input type="reset" name="reset">
+
+
+      </fieldset>
+    </form>
+
+    
+    
+  </div><br><br>
+  </div><!--End of Main Section col div-->
+   </div> <!--End of row div-->
+
+</div>
+<footer id="footer">
+   <h3>Share:</h3>
+    <button type="submit" formaction="#" name="download_button" value="" action = "#"><img src="images/icon_download.png" alt = "download"></button>
+    <button type="submit" formaction="#" name="mail_button" value=""><img src="images/icon_mail.png" alt = "mail"></button>
+    <button type="submit" formaction="#" name="map_button" value=""><img src="images/icon_map.png" alt = "map"></button>
+    <button type="submit" formaction="#" name="like_button" value=""><img src="images/icon_up.png" alt = "like"></button>
+    <button type="submit" formaction="#" name="dislike_button" value=""><img src="images/icon_down.png" alt = "dislike"></button>
+</footer>
+</body>
+</html>
